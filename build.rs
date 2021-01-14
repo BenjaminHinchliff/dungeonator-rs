@@ -34,7 +34,7 @@ fn main() {
         .whitelist_type("Grid")
         .whitelist_function("seedDungeonatorRNG")
         .whitelist_function("generateDungeon")
-        .whitelist_function("freeGrid")
+        .whitelist_function(".*[Gg]rid.*")
         .parse_callbacks(Box::new(bindgen::CargoCallbacks))
         .generate()
         .expect("unable to generate dungeonator bindings");
