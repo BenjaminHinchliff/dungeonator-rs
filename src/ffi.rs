@@ -12,7 +12,7 @@ mod tests {
 
     // just tests that nothing crashes
     #[test]
-    fn generation_test() {
+    fn sanity_test() {
         unsafe {
             seedDungeonatorRNG();
 
